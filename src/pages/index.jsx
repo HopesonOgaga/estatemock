@@ -70,8 +70,15 @@ export default function Home() {
           { number: "150+", label: "staff members" },
           { number: "5", label: "member companies" },
         ].map((stat, i) => (
-          <div key={i} className="flex flex-col text-center md:flex-row md:text-left gap-4 items-center">
-            <img className="w-14 sm:w-16" src="/images/house.png" alt={stat.label} />
+          <div
+            key={i}
+            className="flex flex-col text-center md:flex-row md:text-left gap-4 items-center"
+          >
+            <img
+              className="w-14 sm:w-16"
+              src="/images/house.png"
+              alt={stat.label}
+            />
             <div className="flex flex-col">
               <p className="text-2xl sm:text-3xl font-bold text-gray-900">
                 {stat.number}
@@ -180,6 +187,22 @@ export default function Home() {
             </section>
           ))}
         </div>
+      </section>
+      {/* commit  */}
+      <section className="flex flex-col justify-center items-center gap-6 text-center bg-gray-100 px-6 py-16">
+        <p className="uppercase font-bold text-2xl text-green-400">
+          Our Commitment
+        </p>
+        <p className="max-w-2xl text-gray-700 leading-relaxed text-lg md:text-2xl">
+          As we navigate an era where global investors and business leaders turn
+          their focus to Africa as the next epicenter of transformative economic
+          growth, Nigeria stands poised for greatness. With rising hope and
+          aspiration, we envision a future where Nigeria emerges as a leading
+          nation on the global stage. At Palton Morgan Holdings, we are
+          dedicated to playing a pivotal role in revolutionizing the Nigerian
+          real estate sector.
+        </p>
+        <p className="mt-4 font-semibold text-gray-900">— Warden Team</p>
       </section>
 
       {/* Footer */}
