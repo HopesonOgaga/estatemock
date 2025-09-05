@@ -1,8 +1,15 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import Home from "./pages";
+import Navbar from "./components/navbar";
+import VideoCarousel from "./components/caorusel";
+
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
