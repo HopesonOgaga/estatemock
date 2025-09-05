@@ -70,7 +70,7 @@ export default function Home() {
           { number: "150+", label: "staff members" },
           { number: "5", label: "member companies" },
         ].map((stat, i) => (
-          <div key={i} className="flex gap-4 items-center">
+          <div key={i} className="flex flex-col text-center md:flex-row md:text-left gap-4 items-center">
             <img className="w-14 sm:w-16" src="/images/house.png" alt={stat.label} />
             <div className="flex flex-col">
               <p className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -112,7 +112,7 @@ export default function Home() {
         {/* Image */}
         <div className="flex-1">
           <img
-            className="w-full h-[50vh] md:h-[75vh] object-cover rounded-2xl shadow-lg"
+            className="w-full  md:h-[75vh] object-cover rounded-2xl shadow-lg"
             src="/images/woman.jpg"
             alt="Luxury living"
           />
